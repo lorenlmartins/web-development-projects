@@ -1,33 +1,65 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario de Cadastro</title>
+    <title>Seleção de Pizzas</title>
 </head>
 <body>
+    <h1>Escolha suas Pizzas</h1>
     <form>
-        <label>Text: </label><input type="text" name="text" /><br>
-        <label>Number: </label><input type="number" name="number" /><br>
-        <label>Email: </label><input type="email" name="email" /><br>
-        <label>Password: </label><input type="password" name="password" /><br>
-        <label>File: </label><input type="file" name="file" /><br>
-        <label>Color: </label><input type="color" name="color" /><br>
-        <label>Date: </label><input type="date" name="date" /><br>
-        <label>Time: </label><input type="time" name="time" /><br>
-        <label>Week: </label><input type="week" name="week" /><br>
-        <label>Month: </label><input type="month" name="month" /><br>
-        <label>Range: </label><input type="range" name="range" /><br>
-        <label>Search: </label><input type="search" name="search" /><br>
-        <label>URL: </label><input type="url" name="url" /><br>
-        <label>Telephone: </label><input type="tel" name="tel" /><br>
-        <label>Radio: </label><input type="radio" name="radio" /><br>
-        <label>Checkbox: </label><input type="checkbox" name="checkbox" /><br>
-        <label>Submit: </label><input type="submit" name="submit" /><br>
-        <label>Reset: </label><input type="reset" name="reset" /><br>
-        <label>Button: </label><input type="button" name="button" /><br>
-        <label>Image: </label><input type="image" name="image" /><br>
-        <label>Hidden: </label><input type="hidden" name="hidden" /><br>
+        <h3>Tipos de Pizza (selecione uma ou mais opções):</h3>
+        
+        <label>
+            <input type="checkbox" name="pizza" value="marguerita" />
+            Marguerita
+        </label><br>
+        
+        <label>
+            <input type="checkbox" name="pizza" value="pepperoni" />
+            Pepperoni
+        </label><br>
+        
+        <label>
+            <input type="checkbox" name="pizza" value="quatro_queijos" />
+            Quatro Queijos
+        </label><br>
+        
+        <label>
+            <input type="checkbox" name="pizza" value="vegetariana" />
+            Vegetariana
+        </label><br>
+        
+        <label>
+            <input type="checkbox" name="pizza" value="frango_catupiry" />
+            Frango com Catupiry
+        </label><br>
+        
+        <label>
+            <input type="checkbox" name="pizza" value="bacon" />
+            Bacon
+        </label><br>
+
+        <h3>Escolha o Tamanho da Pizza:</h3>
+        <label>
+            <input type="radio" name="tamanho" value="pequena" />
+            Pequena
+        </label><br>
+        
+        <label>
+            <input type="radio" name="tamanho" value="media" />
+            Média
+        </label><br>
+        
+        <label>
+            <input type="radio" name="tamanho" value="grande" />
+            Grande
+        </label><br>
+
+        <h3>Adicionar Observações:</h3>
+        <textarea name="observacoes" rows="4" cols="50" placeholder="Digite suas observações aqui..."></textarea><br>
+
+        <input type="submit" value="Enviar Pedido" />
     </form>
 </body>
 </html>
