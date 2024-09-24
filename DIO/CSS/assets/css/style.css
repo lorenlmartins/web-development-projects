@@ -39,3 +39,25 @@ li {
 #rgba-semi-transparent {
     background-color: rgba(100, 150, 200, 0.5); /* Custom RGBA with transparency */
 }
+
+/* Hexadecimal color examples */
+#hex-blue {
+    background-color: #0000FF; /* Hexadecimal Blue */
+}
+
+#hex-custom {
+    background-color: #6495ED; /* Custom Hexadecimal */
+}
+
+/* HSL and HSLA color examples */
+#hsl-yellow {
+    background-color: hsl(60, 100%, 50%); /* HSL Yellow */
+}
+
+#hsl-custom {
+    background-color: hsl(210, 50%, 60%); /* Custom HSL */
+}
+
+#hsla-semi-transparent {
+    background-color: hsla(210, 50%, 60%, 0.5); /* Custom HSLA with transparency */
+}
