@@ -3,60 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS Practice: Colors, Object-fit, and Position</title>
+    <title>CSS Practice: Background Properties</title>
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <h1>CSS Practice: Colors, Object-fit, and Position</h1>
+    <h1>CSS Practice: Background Properties</h1>
     
-    <section id="colors">
-        <h2>Color Formats</h2>
-        <p>Examples of using different color formats in CSS:</p>
-        <ul>
-            <li id="rgb-red">RGB Red (rgb(255, 0, 0))</li>
-            <li id="rgb-green">RGB Green (rgb(0, 255, 0))</li>
-            <li id="rgb-blue">RGB Blue (rgb(0, 0, 255))</li>
-            <li id="rgba-semi-transparent">RGBA with transparency (rgba(100, 150, 200, 0.5))</li>
-            <li id="hex-custom">Custom Hexadecimal (#6495ED)</li>
-            <li id="hsl-custom">Custom HSL (hsl(210, 50%, 60%))</li>
-            <li id="hsla-semi-transparent">HSLA with transparency (hsla(210, 50%, 60%, 0.5))</li>
-        </ul>
-    </section>
+    <section id="background-properties">
+        <h2>Background Origin, Clip, and Size</h2>
+        <div class="background-box" id="bg-origin-box">
+            <p>Background Origin</p>
+        </div>
 
-    <section id="object-fit">
-        <h2>Object-fit Values</h2>
-        <div class="image-container">
-            <div class="img-wrap">
-                <p>object-fit: fill;</p>
-                <img src="https://via.placeholder.com/200x150" alt="Fill">
-            </div>
-            <div class="img-wrap">
-                <p>object-fit: contain;</p>
-                <img src="https://via.placeholder.com/200x150" alt="Contain">
-            </div>
-            <div class="img-wrap">
-                <p>object-fit: cover;</p>
-                <img src="https://via.placeholder.com/200x150" alt="Cover">
-            </div>
-            <div class="img-wrap">
-                <p>object-fit: none;</p>
-                <img src="https://via.placeholder.com/200x150" alt="None">
-            </div>
-            <div class="img-wrap">
-                <p>object-fit: scale-down;</p>
-                <img src="https://via.placeholder.com/200x150" alt="Scale-down">
-            </div>
+        <div class="background-box" id="bg-clip-box">
+            <p>Background Clip</p>
+        </div>
+
+        <div class="background-box" id="bg-size-box">
+            <p>Background Size</p>
         </div>
     </section>
 
-    <section id="position">
-        <h2>Position Values</h2>
-        <div class="position-container">
-            <div class="box" id="static-box">Static</div>
-            <div class="box" id="relative-box">Relative</div>
-            <div class="box" id="absolute-box">Absolute</div>
-            <div class="box" id="fixed-box">Fixed</div>
-            <div class="box" id="sticky-box">Sticky</div>
+    <section id="element-backgrounds">
+        <h2>Element Backgrounds</h2>
+        <div class="background-element" id="bg-gradient">
+            <p>Background with Gradient</p>
+        </div>
+
+        <div class="background-element" id="bg-image">
+            <p>Background with Image</p>
+        </div>
+        
+        <div class="background-element" id="bg-multiple">
+            <p>Multiple Backgrounds</p>
         </div>
     </section>
 </body>

@@ -1,7 +1,7 @@
 /* General body styles */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    background-color: #f5f5f5;
     margin: 20px;
 }
 
@@ -10,138 +10,105 @@ h1 {
 }
 
 h2 {
-    margin-top: 40px;
-    color: #555;
+    margin-top: 30px;
+    color: #444;
 }
 
 p {
     font-size: 14px;
-}
-
-/* Color section */
-ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-li {
-    padding: 10px;
-    margin: 8px 0;
     color: white;
-    border-radius: 5px;
-}
-
-#rgb-red {
-    background-color: rgb(255, 0, 0);
-}
-
-#rgb-green {
-    background-color: rgb(0, 255, 0);
-}
-
-#rgb-blue {
-    background-color: rgb(0, 0, 255);
-}
-
-#rgba-semi-transparent {
-    background-color: rgba(100, 150, 200, 0.5);
-}
-
-#hex-custom {
-    background-color: #6495ED;
-}
-
-#hsl-custom {
-    background-color: hsl(210, 50%, 60%);
-}
-
-#hsla-semi-transparent {
-    background-color: hsla(210, 50%, 60%, 0.5);
-}
-
-/* Object-fit section */
-.image-container {
-    display: flex;
-    gap: 10px;
-    flex-wrap: wrap;
-}
-
-.img-wrap {
     text-align: center;
 }
 
-.img-wrap img {
-    width: 200px;
+/* Section styles */
+#background-properties, #element-backgrounds {
+    margin-top: 30px;
+}
+
+.background-box {
+    width: 300px;
     height: 150px;
-    object-fit: fill; /* default */
-}
-
-.img-wrap:nth-child(2) img {
-    object-fit: contain;
-}
-
-.img-wrap:nth-child(3) img {
-    object-fit: cover;
-}
-
-.img-wrap:nth-child(4) img {
-    object-fit: none;
-}
-
-.img-wrap:nth-child(5) img {
-    object-fit: scale-down;
-}
-
-/* Position section */
-.position-container {
-    position: relative;
-    height: 300px;
-    background-color: #e0e0e0;
-    border: 1px solid #ccc;
-    margin-top: 20px;
+    margin: 20px 0;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.box {
-    width: 120px;
-    height: 80px;
-    background-color: #6495ED;
-    color: white;
-    padding: 10px;
-    text-align: center;
-    display: flex;
-    align-items: center;
     justify-content: center;
-    border-radius: 5px;
-}
-
-/* Position values */
-#static-box {
-    position: static;
-}
-
-#relative-box {
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    border: 2px solid #ddd;
     position: relative;
-    top: 20px;
-    left: 20px;
 }
 
-#absolute-box {
-    position: absolute;
-    top: 50px;
-    left: 150px;
+.background-element {
+    width: 300px;
+    height: 150px;
+    margin: 20px 0;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #444;
 }
 
-#fixed-box {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
+/* Background Origin */
+#bg-origin-box {
+    background-image: url('https://via.placeholder.com/300x150');
+    background-repeat: no-repeat;
+    background-origin: border-box; /* Default */
+    border: 20px solid #333;
+    padding: 20px;
 }
 
-#sticky-box {
-    position: sticky;
-    top: 0;
-    background-color: #FF6347; /* sticky box with a different color */
+#bg-origin-box:hover {
+    background-origin: content-box;
+}
+
+/* Background Clip */
+#bg-clip-box {
+    background-color: lightcoral;
+    background-clip: border-box; /* Default */
+    border: 10px dashed #000;
+}
+
+#bg-clip-box:hover {
+    background-clip: padding-box;
+}
+
+#bg-clip-box:active {
+    background-clip: content-box;
+}
+
+/* Background Size (resizing images) */
+#bg-size-box {
+    background-image: url('https://via.placeholder.com/300x150');
+    background-size: cover; /* Default */
+    background-position: center;
+    border: 5px solid #000;
+}
+
+#bg-size-box:hover {
+    background-size: contain;
+}
+
+#bg-size-box:active {
+    background-size: 50% 50%; /* Custom size */
+}
+
+/* Gradient background */
+#bg-gradient {
+    background: linear-gradient(45deg, #ff7f50, #6495ed);
+}
+
+/* Image background */
+#bg-image {
+    background-image: url('https://via.placeholder.com/300x150');
+    background-size: cover;
+    background-position: center;
+}
+
+/* Multiple Backgrounds */
+#bg-multiple {
+    background-image: url('https://via.placeholder.com/150x150'), linear-gradient(45deg, #ff7f50, #6495ed);
+    background-position: left top, right bottom;
+    background-size: 100px 100px, cover;
 }
