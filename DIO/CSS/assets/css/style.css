@@ -1,90 +1,77 @@
-/* General body styles */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
-    margin: 20px;
+/* Font Face Declaration */
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Regular.ttf') format('truetype');
+    font-weight: normal;
 }
 
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Bold.ttf') format('truetype');
+    font-weight: bold;
+}
+
+/* Body Styles */
+body {
+    font-family: 'Roboto', sans-serif; /* Fallback to sans-serif */
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4; /* Light background for contrast */
+}
+
+/* Headings */
 h1 {
-    color: #333;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333; /* Darker color for better readability */
 }
 
 h2 {
-    margin-top: 30px;
-    color: #444;
-}
-
-p {
-    font-size: 14px;
-    color: white;
-    text-align: center;
-}
-
-/* Section styles */
-#border-properties, #border-image-section {
-    margin-top: 30px;
-}
-
-.border-box {
-    width: 300px;
-    height: 150px;
-    margin: 20px 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
+    font-size: 20px;
     font-weight: bold;
-    border: 5px solid #000; /* Default border */
-    position: relative;
-    background-color: #6495ed;
+    color: #555; /* Medium color for secondary headings */
 }
 
-/* Border Size */
-#border-size {
-    border-width: 10px;
+/* Paragraph Styles */
+p {
+    font-size: 16px;
+    line-height: 1.5; /* Improves readability */
+    color: #666; /* Slightly lighter color for body text */
 }
 
-/* Border Style */
-#border-style {
-    border-style: dashed; /* Other options: solid, dotted, double, groove, ridge, inset, outset, none */
+/* Font Size Variations */
+.medium-font {
+    font-size: 18px;
 }
 
-/* Border Color */
-#border-color {
-    border-color: crimson;
+.large-font {
+    font-size: 22px;
 }
 
-/* Rounded Corners (Border Radius) */
-#border-radius {
-    border-radius: 25px;
+/* Font Styles */
+.italic {
+    font-style: italic;
 }
 
-/* Border Image Properties */
-#border-image-source {
-    border: 20px solid transparent;
-    border-image-source: url('https://via.placeholder.com/300x150');
-    border-image-slice: 30; /* Control how the image is sliced */
+.underline {
+    text-decoration: underline;
 }
 
-#border-image-width {
-    border: 10px solid transparent;
-    border-image-source: url('https://via.placeholder.com/300x150');
-    border-image-width: 20px; /* Set the width of the image border */
-    border-image-slice: 20;
+/* Font Weight Variations */
+.bold {
+    font-weight: bold;
 }
 
-#border-image-repeat {
-    border: 15px solid transparent;
-    border-image-source: url('https://via.placeholder.com/300x150');
-    border-image-slice: 40;
-    border-image-width: 20px;
-    border-image-repeat: round; /* Options: stretch, repeat, round, space */
+/* List Styles */
+ul {
+    list-style-type: disc;
+    margin: 10px 0;
+    padding-left: 20px; /* Space before list items */
 }
 
-#border-image-outset {
-    border: 10px solid transparent;
-    border-image-source: url('https://via.placeholder.com/300x150');
-    border-image-slice: 30;
-    border-image-width: 20px;
-    border-image-outset: 10px; /* Controls how far the border image extends outside the border box */
+/* Footer */
+footer {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #999; /* Light gray for footer text */
 }
