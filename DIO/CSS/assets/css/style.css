@@ -21,11 +21,11 @@ p {
 }
 
 /* Section styles */
-#background-properties, #element-backgrounds {
+#border-properties, #border-image-section {
     margin-top: 30px;
 }
 
-.background-box {
+.border-box {
     width: 300px;
     height: 150px;
     margin: 20px 0;
@@ -34,81 +34,57 @@ p {
     align-items: center;
     color: white;
     font-weight: bold;
-    border: 2px solid #ddd;
+    border: 5px solid #000; /* Default border */
     position: relative;
+    background-color: #6495ed;
 }
 
-.background-element {
-    width: 300px;
-    height: 150px;
-    margin: 20px 0;
-    color: white;
-    font-weight: bold;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 2px solid #444;
+/* Border Size */
+#border-size {
+    border-width: 10px;
 }
 
-/* Background Origin */
-#bg-origin-box {
-    background-image: url('https://via.placeholder.com/300x150');
-    background-repeat: no-repeat;
-    background-origin: border-box; /* Default */
-    border: 20px solid #333;
-    padding: 20px;
+/* Border Style */
+#border-style {
+    border-style: dashed; /* Other options: solid, dotted, double, groove, ridge, inset, outset, none */
 }
 
-#bg-origin-box:hover {
-    background-origin: content-box;
+/* Border Color */
+#border-color {
+    border-color: crimson;
 }
 
-/* Background Clip */
-#bg-clip-box {
-    background-color: lightcoral;
-    background-clip: border-box; /* Default */
-    border: 10px dashed #000;
+/* Rounded Corners (Border Radius) */
+#border-radius {
+    border-radius: 25px;
 }
 
-#bg-clip-box:hover {
-    background-clip: padding-box;
+/* Border Image Properties */
+#border-image-source {
+    border: 20px solid transparent;
+    border-image-source: url('https://via.placeholder.com/300x150');
+    border-image-slice: 30; /* Control how the image is sliced */
 }
 
-#bg-clip-box:active {
-    background-clip: content-box;
+#border-image-width {
+    border: 10px solid transparent;
+    border-image-source: url('https://via.placeholder.com/300x150');
+    border-image-width: 20px; /* Set the width of the image border */
+    border-image-slice: 20;
 }
 
-/* Background Size (resizing images) */
-#bg-size-box {
-    background-image: url('https://via.placeholder.com/300x150');
-    background-size: cover; /* Default */
-    background-position: center;
-    border: 5px solid #000;
+#border-image-repeat {
+    border: 15px solid transparent;
+    border-image-source: url('https://via.placeholder.com/300x150');
+    border-image-slice: 40;
+    border-image-width: 20px;
+    border-image-repeat: round; /* Options: stretch, repeat, round, space */
 }
 
-#bg-size-box:hover {
-    background-size: contain;
-}
-
-#bg-size-box:active {
-    background-size: 50% 50%; /* Custom size */
-}
-
-/* Gradient background */
-#bg-gradient {
-    background: linear-gradient(45deg, #ff7f50, #6495ed);
-}
-
-/* Image background */
-#bg-image {
-    background-image: url('https://via.placeholder.com/300x150');
-    background-size: cover;
-    background-position: center;
-}
-
-/* Multiple Backgrounds */
-#bg-multiple {
-    background-image: url('https://via.placeholder.com/150x150'), linear-gradient(45deg, #ff7f50, #6495ed);
-    background-position: left top, right bottom;
-    background-size: 100px 100px, cover;
+#border-image-outset {
+    border: 10px solid transparent;
+    border-image-source: url('https://via.placeholder.com/300x150');
+    border-image-slice: 30;
+    border-image-width: 20px;
+    border-image-outset: 10px; /* Controls how far the border image extends outside the border box */
 }
