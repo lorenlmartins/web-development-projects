@@ -3,75 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS Color Practice</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
-        }
-
-        h1 {
-            color: #333;
-        }
-
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        li {
-            padding: 10px;
-            margin: 8px 0;
-            color: white;
-        }
-
-        /* Color examples with different methods */
-        #predefined {
-            background-color: aqua; /* Predefined color */
-        }
-
-        #currentcolor {
-            background-color: currentcolor; /* Current color keyword */
-            color: darkred; /* Changes the text color */
-        }
-
-        #hex {
-            background-color: #3498db; /* Hexadecimal color */
-        }
-
-        #hexa {
-            background-color: #3498db80; /* Hexadecimal with transparency */
-        }
-
-        #rgb {
-            background-color: rgb(255, 99, 71); /* RGB color */
-        }
-
-        #rgba {
-            background-color: rgba(255, 99, 71, 0.5); /* RGBA with transparency */
-        }
-
-        #hsl {
-            background-color: hsl(120, 60%, 50%); /* HSL color */
-        }
-
-        #hsla {
-            background-color: hsla(120, 60%, 50%, 0.3); /* HSLA with transparency */
-        }
-    </style>
+    <title>RGB Color Practice</title>
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <h1>Color Examples</h1>
-    <p>Different ways to set colors in CSS:</p>
+    <h1>RGB and RGBA Colors</h1>
+    <p>Examples of using RGB and RGBA to define colors in CSS:</p>
     <ul>
-        <li id="predefined">Predefined Color</li>
-        <li id="currentcolor">Current Color</li>
-        <li id="hex">Hexadecimal Color</li>
-        <li id="hexa">Hexadecimal with Transparency</li>
-        <li id="rgb">RGB Color</li>
-        <li id="rgba">RGBA with Transparency</li>
-        <li id="hsl">HSL Color</li>
-        <li id="hsla">HSLA with Transparency</li>
+        <li id="rgb-red">RGB Red (rgb(255, 0, 0))</li>
+        <li id="rgb-green">RGB Green (rgb(0, 255, 0))</li>
+        <li id="rgb-blue">RGB Blue (rgb(0, 0, 255))</li>
+        <li id="rgb-custom">Custom RGB (rgb(100, 150, 200))</li>
+        <li id="rgba-semi-transparent">Custom RGBA with transparency (rgba(100, 150, 200, 0.5))</li>
     </ul>
 </body>
 </html>
