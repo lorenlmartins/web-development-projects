@@ -3,25 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trilha de CSS</title>
-    <link rel="stylesheet" href="assets/css/style.css">
+    <title>CSS Color Practice</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            padding: 10px;
+            margin: 8px 0;
+            color: white;
+        }
+
+        /* Color examples with different methods */
+        #predefined {
+            background-color: aqua; /* Predefined color */
+        }
+
+        #currentcolor {
+            background-color: currentcolor; /* Current color keyword */
+            color: darkred; /* Changes the text color */
+        }
+
+        #hex {
+            background-color: #3498db; /* Hexadecimal color */
+        }
+
+        #hexa {
+            background-color: #3498db80; /* Hexadecimal with transparency */
+        }
+
+        #rgb {
+            background-color: rgb(255, 99, 71); /* RGB color */
+        }
+
+        #rgba {
+            background-color: rgba(255, 99, 71, 0.5); /* RGBA with transparency */
+        }
+
+        #hsl {
+            background-color: hsl(120, 60%, 50%); /* HSL color */
+        }
+
+        #hsla {
+            background-color: hsla(120, 60%, 50%, 0.3); /* HSLA with transparency */
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Trilha de CSS</h1>
-        <h2>Introdução ao CSS</h2>
-    </header>
-
-    <p>This is a simple paragraph demonstrating <span class="highlight">highlighting text</span> with CSS.</p>
-    
-    <div id="my-id">This is a div with an ID.</div>
-
-    <p class="my-class">This text has a class applied to it.</p>
-
-    <div class="flex-container">
-        <div class="flex-item">Box 1</div>
-        <div class="flex-item">Box 2</div>
-        <div class="flex-item">Box 3</div>
-    </div>
+    <h1>Color Examples</h1>
+    <p>Different ways to set colors in CSS:</p>
+    <ul>
+        <li id="predefined">Predefined Color</li>
+        <li id="currentcolor">Current Color</li>
+        <li id="hex">Hexadecimal Color</li>
+        <li id="hexa">Hexadecimal with Transparency</li>
+        <li id="rgb">RGB Color</li>
+        <li id="rgba">RGBA with Transparency</li>
+        <li id="hsl">HSL Color</li>
+        <li id="hsla">HSLA with Transparency</li>
+    </ul>
 </body>
 </html>
