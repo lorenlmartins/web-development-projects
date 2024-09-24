@@ -1,12 +1,24 @@
+/* General body styles */
 body {
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
+    margin: 20px;
 }
 
 h1 {
     color: #333;
 }
 
+h2 {
+    margin-top: 40px;
+    color: #555;
+}
+
+p {
+    font-size: 14px;
+}
+
+/* Color section */
 ul {
     list-style-type: none;
     padding: 0;
@@ -19,45 +31,117 @@ li {
     border-radius: 5px;
 }
 
-/* RGB and RGBA color examples */
 #rgb-red {
-    background-color: rgb(255, 0, 0); /* Red */
+    background-color: rgb(255, 0, 0);
 }
 
 #rgb-green {
-    background-color: rgb(0, 255, 0); /* Green */
+    background-color: rgb(0, 255, 0);
 }
 
 #rgb-blue {
-    background-color: rgb(0, 0, 255); /* Blue */
-}
-
-#rgb-custom {
-    background-color: rgb(100, 150, 200); /* Custom RGB */
+    background-color: rgb(0, 0, 255);
 }
 
 #rgba-semi-transparent {
-    background-color: rgba(100, 150, 200, 0.5); /* Custom RGBA with transparency */
-}
-
-/* Hexadecimal color examples */
-#hex-blue {
-    background-color: #0000FF; /* Hexadecimal Blue */
+    background-color: rgba(100, 150, 200, 0.5);
 }
 
 #hex-custom {
-    background-color: #6495ED; /* Custom Hexadecimal */
-}
-
-/* HSL and HSLA color examples */
-#hsl-yellow {
-    background-color: hsl(60, 100%, 50%); /* HSL Yellow */
+    background-color: #6495ED;
 }
 
 #hsl-custom {
-    background-color: hsl(210, 50%, 60%); /* Custom HSL */
+    background-color: hsl(210, 50%, 60%);
 }
 
 #hsla-semi-transparent {
-    background-color: hsla(210, 50%, 60%, 0.5); /* Custom HSLA with transparency */
+    background-color: hsla(210, 50%, 60%, 0.5);
+}
+
+/* Object-fit section */
+.image-container {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.img-wrap {
+    text-align: center;
+}
+
+.img-wrap img {
+    width: 200px;
+    height: 150px;
+    object-fit: fill; /* default */
+}
+
+.img-wrap:nth-child(2) img {
+    object-fit: contain;
+}
+
+.img-wrap:nth-child(3) img {
+    object-fit: cover;
+}
+
+.img-wrap:nth-child(4) img {
+    object-fit: none;
+}
+
+.img-wrap:nth-child(5) img {
+    object-fit: scale-down;
+}
+
+/* Position section */
+.position-container {
+    position: relative;
+    height: 300px;
+    background-color: #e0e0e0;
+    border: 1px solid #ccc;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.box {
+    width: 120px;
+    height: 80px;
+    background-color: #6495ED;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+/* Position values */
+#static-box {
+    position: static;
+}
+
+#relative-box {
+    position: relative;
+    top: 20px;
+    left: 20px;
+}
+
+#absolute-box {
+    position: absolute;
+    top: 50px;
+    left: 150px;
+}
+
+#fixed-box {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+#sticky-box {
+    position: sticky;
+    top: 0;
+    background-color: #FF6347; /* sticky box with a different color */
 }
